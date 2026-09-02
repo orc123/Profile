@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="vi" data-lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CV - Phạm Ngọc Đông | Middle .NET / Full-stack Developer</title>
+  <meta name="description" content="Hồ sơ năng lực (CV / Resume) của Phạm Ngọc Đông - Middle .NET / Full-stack Developer với hơn 6 năm kinh nghiệm trong kiến trúc Clean Architecture, DDD, .NET Core, ABP, Angular, Blazor và SQL Server." />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Modern Stylesheet -->
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+
+  <!-- Floating Action Toolbar (Hidden in Print) -->
+  <aside class="action-toolbar" aria-label="CV Actions">
+    <div class="toggle-group" title="Chuyển đổi ngôn ngữ / Switch Language">
+      <button id="lang-vi-btn" class="toggle-btn active" type="button">VI</button>
+      <button id="lang-en-btn" class="toggle-btn" type="button">EN</button>
+    </div>
+
+    <button id="theme-toggle-btn" class="action-btn" type="button" title="Đổi giao diện Sáng / Tối">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <a id="download-pdf-btn" href="CV_PhamNgocDong_TiengViet.pdf" download="CV_PhamNgocDong_TiengViet.pdf" class="action-btn" title="Tải file PDF">
+      <i class="fas fa-file-pdf" style="color: #ef4444;"></i>
+      <span>PDF</span>
+    </a>
+
+    <button id="print-cv-btn" class="action-btn primary" type="button" title="In hoặc lưu file PDF chuẩn A4">
+      <i class="fas fa-print"></i>
+      <span class="lang-vi">In / Xuất PDF</span>
+      <span class="lang-en">Print / PDF</span>
+    </button>
+  </aside>
+
+  <!-- Main CV Container -->
+  <div class="cv-container">
+    <div class="cv-grid">
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="cv-sidebar">
+        <!-- Profile Header -->
+        <div class="profile-card">
+          <div class="avatar-wrapper">
+            <img src="./assets/img/avatar.jpg" alt="Phạm Ngọc Đông" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Pham+Ngoc+Dong&background=2563eb&color=fff&size=200'" />
+          </div>
+          <h1 class="profile-name">
+            <span class="lang-vi">Phạm Ngọc Đông</span>
+            <span class="lang-en">Pham Ngoc Dong</span>
+          </h1>
+          <div class="profile-role">
+            <span class="lang-vi">Middle .NET / Full-stack</span>
+            <span class="lang-en">Middle .NET / Full-stack</span>
+          </div>
+          <div class="profile-badge">
+            <i class="fas fa-code-branch"></i>
+            <span class="lang-vi">6+ Năm Kinh Nghiệm</span>
+            <span class="lang-en">6+ Years Experience</span>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">
+            <i class="fas fa-address-card"></i>
+            <span class="lang-vi">Thông tin liên hệ</span>
+            <span class="lang-en">Contact Details</span>
+          </h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fas fa-calendar-alt contact-icon"></i>
+              <div>
+                <strong class="lang-vi">Ngày sinh:</strong>
+                <strong class="lang-en">DOB:</strong>
+                <div>16/11/1993</div>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-phone-alt contact-icon"></i>
+              <div>
+                <strong class="lang-vi">Điện thoại:</strong>
+                <strong class="lang-en">Phone:</strong>
+                <div><a href="tel:0375227797">0375 227 797</a></div>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <div>
+                <strong>Email:</strong>
+                <div><a href="mailto:dong.orc12@gmail.com">dong.orc12@gmail.com</a></div>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <div>
+                <strong class="lang-vi">Địa chỉ:</strong>
+                <strong class="lang-en">Location:</strong>
+                <div>
+                  <span class="lang-vi">Hà Nội, Việt Nam</span>
+                  <span class="lang-en">Hanoi, Vietnam</span>
+                </div>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-github contact-icon"></i>
+              <div>
+                <strong>GitHub:</strong>
+                <div><a href="https://github.com/orc123" target="_blank" rel="noopener">github.com/orc123</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Technical Skills Badges -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">
+            <i class="fas fa-laptop-code"></i>
+            <span class="lang-vi">Kỹ năng chuyên môn</span>
+            <span class="lang-en">Technical Skills</span>
+          </h2>
+
+          <div class="skill-group">
+            <span class="skill-group-title">Backend & Frameworks</span>
+            <div class="tag-cloud">
+              <span class="skill-tag highlight">C#</span>
+              <span class="skill-tag highlight">.NET 10 / 6 / Core</span>
+              <span class="skill-tag highlight">ASP.NET Web API</span>
+              <span class="skill-tag">ASP.NET MVC</span>
+              <span class="skill-tag highlight">ABP Framework</span>
+              <span class="skill-tag highlight">EF Core</span>
+              <span class="skill-tag">Dapper</span>
+              <span class="skill-tag">Clean Architecture</span>
+              <span class="skill-tag">DDD</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-title">Frontend & UI</span>
+            <div class="tag-cloud">
+              <span class="skill-tag highlight">Angular (11-21)</span>
+              <span class="skill-tag highlight">Blazor Server/WASM</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript ES6+</span>
+              <span class="skill-tag">Bootstrap / Tailwind</span>
+              <span class="skill-tag">jQuery</span>
+              <span class="skill-tag">Phaser Game Engine</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-title">Databases & Storage</span>
+            <div class="tag-cloud">
+              <span class="skill-tag highlight">MS SQL Server</span>
+              <span class="skill-tag">Stored Procedures</span>
+              <span class="skill-tag">Query Optimization</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-title">Tools & Middleware</span>
+            <div class="tag-cloud">
+              <span class="skill-tag">Visual Studio 2022</span>
+              <span class="skill-tag">Git / GitHub / TFS</span>
+              <span class="skill-tag highlight">HULFT 8</span>
+              <span class="skill-tag">Umbraco CMS</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag highlight">AI Coding Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="lang-vi">Học vấn & Bằng cấp</span>
+            <span class="lang-en">Education</span>
+          </h2>
+          <div class="timeline-mini">
+            <div class="timeline-mini-item">
+              <div class="timeline-mini-title">
+                <span class="lang-vi">Đại học Bách Khoa Hà Nội (HUST)</span>
+                <span class="lang-en">Hanoi University of Science and Technology</span>
+              </div>
+              <div class="timeline-mini-sub">
+                <span class="lang-vi">Cử nhân Công nghệ Thông tin (2011 - 2016)</span>
+                <span class="lang-en">B.S. in Information Technology (2011 - 2016)</span>
+              </div>
+            </div>
+            <div class="timeline-mini-item">
+              <div class="timeline-mini-title">
+                <span class="lang-vi">Chứng chỉ TOEIC 465</span>
+                <span class="lang-en">TOEIC Certificate: 465</span>
+              </div>
+              <div class="timeline-mini-sub">
+                <span class="lang-vi">Năm cấp: 2016</span>
+                <span class="lang-en">Issued: 2016</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">
+            <i class="fas fa-heart"></i>
+            <span class="lang-vi">Sở thích</span>
+            <span class="lang-en">Interests</span>
+          </h2>
+          <div class="tag-cloud">
+            <span class="skill-tag">
+              <span class="lang-vi">🏃 Đi bộ & Thể thao</span>
+              <span class="lang-en">🏃 Running & Fitness</span>
+            </span>
+            <span class="skill-tag">
+              <span class="lang-vi">🚴 Đạp xe đường dài</span>
+              <span class="lang-en">🚴 Long-distance Cycling</span>
+            </span>
+            <span class="skill-tag">
+              <span class="lang-vi">🎮 RTS Gaming (Warcraft 3)</span>
+              <span class="lang-en">🎮 RTS Gaming (Warcraft 3)</span>
+            </span>
+            <span class="skill-tag">
+              <span class="lang-vi">🤖 Nghiên cứu AI Tools</span>
+              <span class="lang-en">🤖 AI Engineering</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Download Buttons (Sidebar) -->
+        <div class="sidebar-downloads no-print">
+          <a id="download-pdf-sidebar-btn" href="CV_PhamNgocDong_TiengViet.pdf" download="CV_PhamNgocDong_TiengViet.pdf" class="download-btn">
+            <i class="fas fa-file-pdf" style="color: #ef4444;"></i>
+            <span class="lang-vi">Tải bản PDF (.pdf)</span>
+            <span class="lang-en">Download PDF (.pdf)</span>
+          </a>
+          <a id="download-md-btn" href="CV_PhamNgocDong_TiengViet.md" download="CV_PhamNgocDong_TiengViet.md" class="download-btn">
+            <i class="fab fa-markdown"></i>
+            <span class="lang-vi">Tải bản Markdown (.md)</span>
+            <span class="lang-en">Download Markdown (.md)</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- RIGHT MAIN CONTENT -->
+      <main class="cv-main">
+
+        <!-- Professional Summary -->
+        <section class="main-section">
+          <div class="section-header">
+            <h2 class="section-title">
+              <i class="fas fa-user-tie"></i>
+              <span class="lang-vi">Tổng quan nghề nghiệp</span>
+              <span class="lang-en">Professional Summary</span>
+            </h2>
+          </div>
+          <div class="summary-card">
+            <div class="lang-vi">
+              <p>Lập trình viên <strong>Middle .NET / Full-stack</strong> với hơn <strong>6 năm kinh nghiệm thực chiến</strong> trong việc thiết kế kiến trúc, phát triển và tối ưu hóa các hệ thống Enterprise, Web Application và RESTful APIs hiệu năng cao trên nền tảng Microsoft (<strong>.NET Core / .NET 5/6/10, C#, SQL Server</strong>).</p>
+              <p>Thế mạnh chuyên sâu về <strong>Clean Architecture</strong>, <strong>Domain-Driven Design (DDD)</strong>, <strong>ABP Framework</strong>, <strong>Blazor (Server & WASM)</strong> và <strong>Angular (11-21)</strong>. Có năng lực vững chắc trong thiết kế CSDL quan hệ, tối ưu Stored Procedures và đánh chỉ mục truy vấn tải cao. Tích hợp thành thạo hệ thống trung gian <strong>HULFT 8</strong> và ứng dụng linh hoạt các <strong>công cụ AI</strong> để gia tăng vượt bậc tốc độ bàn giao phần mềm.</p>
+            </div>
+            <div class="lang-en">
+              <p>Results-oriented <strong>Middle .NET / Full-stack Developer</strong> with <strong>over 6 years of hands-on experience</strong> architecting, developing, and optimizing enterprise-grade web applications, high-throughput RESTful APIs, and distributed platforms across the Microsoft ecosystem (<strong>.NET Core / .NET 5/6/10, C#, SQL Server</strong>).</p>
+              <p>Specialized in <strong>Clean Architecture</strong>, <strong>Domain-Driven Design (DDD)</strong>, <strong>ABP.io Framework</strong>, <strong>Blazor (Server & WASM)</strong>, and <strong>Angular (11-21)</strong>. Proficient in database modeling, SQL indexing/stored procedure tuning, <strong>HULFT 8</strong> middleware integrations, and applying <strong>AI-assisted engineering</strong> to accelerate software delivery cycles.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects & Experience -->
+        <section class="main-section">
+          <div class="section-header">
+            <h2 class="section-title">
+              <i class="fas fa-briefcase"></i>
+              <span class="lang-vi">Kinh nghiệm làm việc & Dự án</span>
+              <span class="lang-en">Work Experience & Projects</span>
+            </h2>
+          </div>
+
+          <!-- Interactive Tech Filter Bar -->
+          <div class="filter-bar no-print" aria-label="Project Filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="net">.NET / C#</button>
+            <button class="filter-btn" data-filter="angular">Angular</button>
+            <button class="filter-btn" data-filter="blazor">Blazor</button>
+            <button class="filter-btn" data-filter="abp">ABP Framework</button>
+            <button class="filter-btn" data-filter="architecture">DDD / Clean Arch</button>
+          </div>
+
+          <div class="project-timeline">
+
+            <!-- PROJECT 1: DuanEcommerce -->
+            <article class="project-card" data-tags="net angular abp architecture efcore sql">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>DuanEcommerce – Enterprise E-Commerce Platform</span>
+                    <span class="project-badge-featured">Featured</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item">
+                      <i class="fas fa-user-shield"></i>
+                      <strong class="lang-vi">Kiến trúc sư / Lead Dev</strong>
+                      <strong class="lang-en">Solution Architect / Lead Dev</strong>
+                    </span>
+                    <span class="project-meta-item">
+                      <i class="fas fa-layer-group"></i>
+                      <span class="lang-vi">Dự án Nghiên cứu & Kiến trúc</span>
+                      <span class="lang-en">Architecture & Research Project</span>
+                    </span>
+                  </div>
+                </div>
+                <span class="project-period">2026</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Hệ thống thương mại điện tử quy mô Enterprise hoàn chỉnh, áp dụng triệt để kiến trúc <strong>Domain-Driven Design (DDD)</strong> và <strong>Clean Architecture</strong> đảm bảo độ mở rộng cao, bảo trì linh hoạt và hiệu năng tối đa.</span>
+                <span class="lang-en">An enterprise-grade, highly scalable e-commerce application engineered with strict adherence to <strong>Domain-Driven Design (DDD)</strong> and <strong>Clean Architecture</strong> principles.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 10</span>
+                <span class="tech-pill primary">ABP Framework</span>
+                <span class="tech-pill primary">Angular 21</span>
+                <span class="tech-pill">Entity Framework Core</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">Clean Architecture</span>
+                <span class="tech-pill">DDD</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Thiết kế kiến trúc tổng thể phân lớp (Domain, Application, Infrastructure, API) theo chuẩn DDD và Clean Architecture.</li>
+                <li class="lang-en">Architected layered system design (Domain, Application, Infrastructure, API) according to DDD and Clean Architecture.</li>
+                <li class="lang-vi">Xây dựng trọn bộ RESTful APIs cho Catalog sản phẩm, giỏ hàng, đặt hàng, cổng thanh toán và quản lý phân quyền Identity.</li>
+                <li class="lang-en">Engineered robust RESTful APIs for Product Catalog, Cart, Order Fulfillment, Payment, and Identity Authorization.</li>
+                <li class="lang-vi">Phát triển giao diện Single Page Application (SPA) tốc độ cao với Angular 21, tối ưu hóa truy vấn Database SQL Server.</li>
+                <li class="lang-en">Built high-performance SPA frontend with Angular 21, tuning database queries and caching mechanisms.</li>
+              </ul>
+
+              <a href="https://github.com/orc123/DuanEcommerce" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> https://github.com/orc123/DuanEcommerce
+              </a>
+            </article>
+
+            <!-- PROJECT 2: Wiztech - SHTemple -->
+            <article class="project-card" data-tags="net sql jquery bootstrap">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Wiztech – SHTemple (OperaTicket Cinema Reservation & SHT)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item">
+                      <i class="fas fa-building"></i> Công ty Wiztech
+                    </span>
+                    <span class="project-meta-item">
+                      <i class="fas fa-users"></i> Team: 8 members
+                    </span>
+                    <span class="project-meta-item">
+                      <i class="fas fa-code"></i> Middle .NET Developer
+                    </span>
+                  </div>
+                </div>
+                <span class="project-period">12/2023 – 09/2025</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Phát triển phân hệ OperaTicket cho phép đặt vé xem phim trực tuyến với sơ đồ chọn ghế trực quan thời gian thực, xử lý đồng thời giữ chỗ và nâng cấp toàn bộ hệ thống SHT.</span>
+                <span class="lang-en">Developed the OperaTicket cinema reservation module with real-time interactive seat selection grid, concurrency seat locking, and core SHT system maintenance.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">ASP.NET WebForms 4.5</span>
+                <span class="tech-pill primary">C#</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">jQuery</span>
+                <span class="tech-pill">Bootstrap</span>
+                <span class="tech-pill">Visual Studio 2022</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Phân tích yêu cầu nghiệp vụ đặt vé và quy trình giữ chỗ đồng thời (concurrency control) từ khách hàng.</li>
+                <li class="lang-en">Analyzed reservation business rules and designed real-time seat locking concurrency control algorithms.</li>
+                <li class="lang-vi">Trực tiếp thiết kế và lập trình giao diện sơ đồ chọn ghế trực quan (seat layout map) bằng jQuery & Bootstrap.</li>
+                <li class="lang-en">Architected and developed the interactive graphical seat selection map using jQuery and Bootstrap.</li>
+                <li class="lang-vi">Tối ưu hóa Stored Procedures trong SQL Server, xử lý triệt để các lỗi tồn đọng và nâng cao độ ổn định hệ thống.</li>
+                <li class="lang-en">Tuned complex SQL Server Stored Procedures, eliminated legacy defects, and boosted system reliability.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 3: Wiztech - Website & Invoice -->
+            <article class="project-card" data-tags="net sql umbraco">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Wiztech – Corporate Website & Invoice Now Portal</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Wiztech</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 3</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> .NET Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">04/2025 – 05/2025</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Nâng cấp trang web chính thức của công ty, tích hợp tính năng tạo và xuất hóa đơn tự động "Invoice Now" và chuẩn hóa giao diện Header/Footer.</span>
+                <span class="lang-en">Modernized corporate portal, implemented automated 'Invoice Now' electronic billing module, and standardized global Header/Footer navigation.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">ASP.NET MVC 4.5</span>
+                <span class="tech-pill primary">Umbraco CMS</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">Bootstrap / jQuery</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Tích hợp module xuất hóa đơn trực tuyến Invoice Now và cấu hình CMS Umbraco linh hoạt.</li>
+                <li class="lang-en">Integrated the Invoice Now online billing module and customized Umbraco CMS content management workflows.</li>
+                <li class="lang-vi">Tái cấu trúc mã nguồn Frontend và Backend giúp nâng cao tốc độ tải trang và chỉ số SEO.</li>
+                <li class="lang-en">Refactored frontend/backend code to significantly improve page rendering performance and SEO scores.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 4: Newwave - Now App -->
+            <article class="project-card" data-tags="net abp postgresql api">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Newwave Solutions – Now App (Student Transit & Safety)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Newwave Solutions</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 7</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> .NET Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">12/2022 – 03/2023</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Hệ thống di động phục vụ phụ huynh và nhà trường theo dõi lộ trình di chuyển của học sinh, điểm danh Check-in/Check-out thời gian thực và gửi cảnh báo khẩn cấp.</span>
+                <span class="lang-en">Real-time mobile transit and safety platform allowing parents and schools to monitor bus routes, student check-in/out attendance, and emergency alerts.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 5</span>
+                <span class="tech-pill primary">ABP.io Framework</span>
+                <span class="tech-pill primary">PostgreSQL</span>
+                <span class="tech-pill">RESTful API</span>
+                <span class="tech-pill">Visual Studio 2022</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Mô hình hóa cơ sở dữ liệu PostgreSQL và phát triển các dịch vụ Web API hiệu năng cao cho ứng dụng di động.</li>
+                <li class="lang-en">Modeled PostgreSQL relational database schemas and developed high-throughput RESTful APIs for mobile clients.</li>
+                <li class="lang-vi">Áp dụng kiến trúc đa tầng của ABP.io Framework để quản lý phân quyền và đảm bảo bảo mật dữ liệu.</li>
+                <li class="lang-en">Utilized ABP.io multi-layer architecture for secure identity authentication and robust role management.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 5: Newwave - Beekin App -->
+            <article class="project-card" data-tags="net angular abp api">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Newwave Solutions – Beekin App (SOS Emergency & Admin Dashboard)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Newwave Solutions</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 6</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> .NET & Angular Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">10/2022 – 12/2022</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Giải pháp an toàn cá nhân tích hợp cảnh báo SOS, Check-In, Follow Me đi kèm cổng Web Admin quản trị sự cố, phân quyền người dùng và tài liệu.</span>
+                <span class="lang-en">Mobile personal safety suite with SOS panic alerts, live tracking, and responsive Angular Web Admin dashboard for emergency handling.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 5</span>
+                <span class="tech-pill primary">Angular</span>
+                <span class="tech-pill primary">ABP.io</span>
+                <span class="tech-pill">Postman</span>
+                <span class="tech-pill">C#</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Phát triển giải pháp full-stack: Backend REST API (.NET 5) và Frontend Web Admin (Angular).</li>
+                <li class="lang-en">Developed end-to-end full-stack solution: .NET 5 REST APIs and responsive Angular Web Admin interface.</li>
+                <li class="lang-vi">Xây dựng quy trình xử lý cảnh báo SOS tức thì và kiểm thử toàn diện API với Postman.</li>
+                <li class="lang-en">Constructed real-time SOS incident logging workflows and conducted comprehensive API validation with Postman.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 6: Newwave - Internal App -->
+            <article class="project-card" data-tags="net angular sql api">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Newwave Solutions – NWS Internal App (Enterprise Portal)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Newwave Solutions</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 6</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> .NET & Angular Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">10/2021 – 09/2022</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Nền tảng số hóa quản lý nhân sự, tự động hóa quy trình phê duyệt đơn từ (nghỉ phép, công tác, cấp thiết bị) và theo dõi chấm công Check-in / Check-out.</span>
+                <span class="lang-en">Internal digitalization portal automating employee requests (leaves, travel, assets) and tracking attendance check-in/out logs.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 5</span>
+                <span class="tech-pill primary">Angular</span>
+                <span class="tech-pill">MSSQL Server</span>
+                <span class="tech-pill">RESTful API</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Thiết kế cấu trúc CSDL MSSQL Server và kiến trúc Web API phục vụ toàn bộ nhân sự công ty.</li>
+                <li class="lang-en">Engineered MSSQL database structure and scalable Web API endpoints serving company-wide personnel.</li>
+                <li class="lang-vi">Lập trình luồng phê duyệt đa cấp tự động và tính năng thống kê chấm công minh bạch.</li>
+                <li class="lang-en">Built automated multi-step request approval workflows and attendance calculation engines.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 7: Newwave - File Transfer System -->
+            <article class="project-card" data-tags="net angular sql hulft architecture">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Newwave Solutions – File Transfer System (HULFT Middleware)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Newwave Solutions</span>
+                    <span class="project-meta-item"><i class="fas fa-users-cog"></i> <strong>PM / Tech Lead</strong> (Team: 5)</span>
+                  </div>
+                </div>
+                <span class="project-period">03/2022 – 05/2022</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Cổng web trung gian điều phối việc truyền nhận và chuyển đổi tệp tin dữ liệu dung lượng lớn giữa các hệ thống doanh nghiệp sử dụng middleware <strong>HULFT 8</strong>.</span>
+                <span class="lang-en">Secure enterprise portal orchestrating large-scale file conversion and automated data exchange across heterogeneous systems via <strong>HULFT 8</strong> protocol.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 6</span>
+                <span class="tech-pill primary">Angular 12</span>
+                <span class="tech-pill primary">HULFT 8</span>
+                <span class="tech-pill">MSSQL Server</span>
+                <span class="tech-pill">Visual Studio 2022</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Quản lý tiến độ dự án (Project Manager) và định hướng giải pháp kỹ thuật cho nhóm 5 thành viên.</li>
+                <li class="lang-en">Led 5-member development team as Project Manager, overseeing technical roadmap and sprint delivery.</li>
+                <li class="lang-vi">Thiết kế kiến trúc tích hợp giữa .NET 6 Web API và dịch vụ truyền tải an toàn HULFT 8.</li>
+                <li class="lang-en">Designed integration architecture connecting .NET 6 Web APIs with HULFT 8 file transfer daemons.</li>
+                <li class="lang-vi">Phát triển giao diện giám sát trạng thái truyền tải và kiểm soát log tệp tin theo thời gian thực trên Angular 12.</li>
+                <li class="lang-en">Built real-time transfer monitoring and transmission log inspection dashboard in Angular 12.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 8: Kloon - Abacus & Internal -->
+            <article class="project-card" data-tags="net blazor angular sql devexpress architecture">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>Kloon – Abacus Multi-Tenant Portal & Internal Appraisal</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> Kloon</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 8</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> .NET / Full-stack Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">10/2020 – 08/2021</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Phát triển hệ thống quản trị Multi-Tenant Abacus (quản lý User, Tenant, phân quyền, cấu hình tỉ giá quy đổi, phương thức thanh toán) và cổng đánh giá năng lực nhân sự định kỳ.</span>
+                <span class="lang-en">Developed high-security Multi-Tenant administrative platform (User, Tenant, permissions, currency exchange, payment gateways) and quarterly performance review portal.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">.NET 5.0 API</span>
+                <span class="tech-pill primary">Blazor Server & WASM</span>
+                <span class="tech-pill primary">Angular 11</span>
+                <span class="tech-pill">DevExpress UI</span>
+                <span class="tech-pill">SQL Server 2018</span>
+                <span class="tech-pill">TFS</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Tham gia thiết kế CSDL và giải pháp phân vùng dữ liệu cho kiến trúc Multi-Tenant.</li>
+                <li class="lang-en">Contributed to multi-tenant database partitioning strategies and security isolation.</li>
+                <li class="lang-vi">Phát triển giao diện quản trị hiện đại bằng Blazor (Server & WASM) kết hợp thư viện DevExpress.</li>
+                <li class="lang-en">Developed responsive management interfaces utilizing Blazor (Server & WASM) with DevExpress controls.</li>
+                <li class="lang-vi">Xây dựng hệ thống đánh giá nhân sự và bảng chấm công trên Angular 11, viết Unit Test toàn diện.</li>
+                <li class="lang-en">Built employee evaluation and timesheet logging modules using Angular 11 and .NET 5.0 API.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 9: VPBOX - Blended Learning & Cloud Tester -->
+            <article class="project-card" data-tags="net phaser sql game">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>VPBOX – Blended Learning & Cloud Tester System (ose.edu.vn)</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> VPBOX</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team: 4</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> Web & Educational Developer</span>
+                  </div>
+                </div>
+                <span class="project-period">07/2017 – 06/2020</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Hệ sinh thái học tập kết hợp (LMS) cho học sinh tiểu học (tích hợp mini-game Phaser) và hệ thống thi tiếng Anh trực tuyến K-12 toàn diện 4 kỹ năng (Nghe, Nói, Đọc, Viết) tại <strong>ose.edu.vn</strong>.</span>
+                <span class="lang-en">Primary LMS platform with interactive Phaser gamified learning and nationwide K-12 English testing system (4 skills: Listening, Speaking, Reading, Writing) at <strong>ose.edu.vn</strong>.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill primary">ASP.NET MVC 4.5</span>
+                <span class="tech-pill primary">Phaser Engine (HTML5)</span>
+                <span class="tech-pill">SQL Server 2014</span>
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">Audio/Video Streaming</span>
+              </div>
+
+              <ul class="project-bullets">
+                <li class="lang-vi">Thiết kế cấu trúc CSDL ngân hàng câu hỏi đa phương tiện và lập trình mini-game giáo dục bằng <strong>Phaser Game Engine</strong>.</li>
+                <li class="lang-en">Designed multimedia question bank database schema and programmed interactive educational mini-games via <strong>Phaser Engine</strong>.</li>
+                <li class="lang-vi">Xây dựng hệ thống tự động chấm điểm, cổng chấm kỹ năng Nói/Viết của giáo viên và dịch vụ tự động gửi email kết quả tức thì.</li>
+                <li class="lang-en">Engineered automated scoring algorithms, teacher grading portals for Speaking/Writing, and bulk result email dispatch.</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT 10: FSOFT Internship -->
+            <article class="project-card" data-tags="net">
+              <div class="project-header">
+                <div class="project-title-group">
+                  <h3 class="project-title">
+                    <span>FPT Software (FSOFT) – .NET Software Engineering Intern</span>
+                  </h3>
+                  <div class="project-meta">
+                    <span class="project-meta-item"><i class="fas fa-building"></i> FPT Software</span>
+                    <span class="project-meta-item"><i class="fas fa-user-graduate"></i> Thực tập sinh .NET</span>
+                  </div>
+                </div>
+                <span class="project-period">08/2014 – 12/2014</span>
+              </div>
+
+              <p class="project-desc">
+                <span class="lang-vi">Tiếp cận quy trình phát triển phần mềm chuẩn CMMI, tham gia nghiên cứu công nghệ .NET/C#, xây dựng các module web cơ bản và viết Unit Test dưới sự hướng dẫn của Mentor.</span>
+                <span class="lang-en">Trained in standard CMMI software development methodologies; developed core web modules in .NET/C# and executed unit testing under Middle mentorship.</span>
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-pill">C# / .NET</span>
+                <span class="tech-pill">ASP.NET MVC</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">CMMI</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="./assets/app.js"></script>
+</body>
+</html>
