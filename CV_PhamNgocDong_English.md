@@ -182,6 +182,7 @@ Results-oriented **Senior .NET / Full-stack Developer** with **over 6 years of h
 
 ## EDUCATION & CERTIFICATIONS
 
+* **Hands-on AI Training Program (Level 2 – Level 3)** (Sep 2026 – Dec 2026, expected completion) – *In progress*
 * **Bachelor of Engineering in Information Technology** – **Hanoi University of Science and Technology (HUST)** (Sep 2011 – Dec 2016)
 * **TOEIC Certificate:** 465 (2016)
 * **HUST IT Bachelor's Degree:** Conferred 2017

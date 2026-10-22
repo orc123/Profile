@@ -183,6 +183,7 @@ Lập trình viên **Senior .NET / Full-stack** với hơn **6 năm kinh nghiệ
 
 ## HỌC VẤN & BẰNG CẤP (EDUCATION & CERTIFICATIONS)
 
+* **Chương trình Đào tạo AI Thực chiến (Level 2 – Level 3)** (09/2026 – 12/2026, dự kiến hoàn thành) – *Đang theo học*
 * **Cử nhân Công nghệ Thông tin** – **Đại học Bách Khoa Hà Nội** (09/2011 – 12/2016)
 * **Chứng chỉ TOEIC 465** (2016)
 * **Bằng Cử nhân CNTT ĐH Bách Khoa Hà Nội** (Cấp năm 2017)
